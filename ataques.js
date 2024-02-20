@@ -8,7 +8,7 @@ const lanzaLlamas = function(){
     return "charizar usó Lanzallamas";
 }
 const salpicadura = function(){
-    return "usó Salpicadura";
+    return "magikarp usó Salpicadura";
 }
 const terremoto = function(){
     return "usó Terremoto";
@@ -19,5 +19,5 @@ const atacar = function(ataque) {
         return ataque() + " contra " + personaje;
     }
 }
-
+console.log(atacar(salpicadura)("charizar"));
 console.log(atacar(lanzaLlamas)("magikarp"));
